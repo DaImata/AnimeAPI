@@ -1,7 +1,37 @@
 <resources>
-    <string name="app_name">AcessoHardware</string>
-    <string name="capturar_imagem">Foto</string>
-    <string name="visualizar_imagem">Ver na Galeria</string>
-    <string name="visualizar_galeria">Selecionar da Galeria</string>
-    <string name="imgcapturada">Imagem da Camera</string>
+    <string name="app_name">Anime API</string>
+    <string name="lblBemVindo">Seja bem-vindo(a) à</string>
+    <string name="lblMarvelApi">API de Animes</string>
+    <string name="btnPesquisarHerois">Pesquisar Animes</string>
+    <string name="btnPesquisarQuadrinhos">Pesquisar Mangás</string>
+    <string name="btnSaberLocalizacao">Saber Minha Localização</string>
+    <string name="btnPesquisarLocalizacao">Pesquisar Minha Localização</string>
+
+    <string name="lblPesquisarHerois">Pesquisar Animes</string>
+    <string name="lblDigitePesquisarHerois">Digite o nome do anime para ver suas informações</string>
+    <string name="txtNomeHeroi">Ex: Naruto</string>
+    <string name="SalvarInfo">Limpar Tela\ne Salvar Informações</string>
+    <string name="CarrgarInfo">Carregar\nInformações</string>
+
+    <string name="carregando">Carregando...</string>
+    <string name="sem_termodebusca">Informe um termo de busca</string>
+    <string name="sem_internet">Sem internet!</string>
+    <string name="sem_resultados">Sem resultados</string>
+    <string name="mais_informacoes">Botão "Mais Informações" habilitado!</string>
+
+    <string name="lblPesquisarQuadrinhos">Pesquisar Mangás</string>
+    <string name="lblDigitePesquisarQuadrinhos">Digite o nome do mangá para ver suas informações</string>
+    <string name="txtQuadrinhos">Ex: Bleach</string>
+
+    <string name="lblEndereco">Endereço: %1$s \nLatitude: %2$s\nLongitude: %3$s \nHorário: %4$tr</string>
+    <string name="lblAperteComecar">Aperte no botão para pesquisar</string>
+    <string name="PermissaoNegada">Não é possível fazer a busca: \nPermissão de Localização Negada</string>
+    <string name="LocalIndisponivel">Localização Indisponível</string>
+    <string name="EnderecoIndisponivel">Endereco Indisponível</string>
+    <string name="ServicoIndisponivel">Serviço Indisponível</string>
+    <string name="CoordenadaIndisponivel">Coordenadas Indisponíveis</string>
+    <string name="btnParar">Encerrar Busca</string>
+
+    <string name="btnPesquisar">Pesquisar</string>
+    <string name="btnVoltar">Mais informações</string>
 </resources>

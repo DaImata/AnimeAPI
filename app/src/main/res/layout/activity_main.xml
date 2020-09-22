@@ -1,41 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#333333"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:id="@+id/layoutLinear"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+    <TextView
+        android:id="@+id/lblMarvelApi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lblMarvelApi"
+        android:textColor="#FF2B2B"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnPesquisarHerois"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblBemVindo"
+        tools:text="@string/lblMarvelApi" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="capturarImagem"
-            android:text="@string/capturar_imagem" />
+    <Button
+        android:id="@+id/btnPesquisarHerois"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="Animes"
+        android:text="@string/btnPesquisarHerois"
+        app:layout_constraintBottom_toTopOf="@+id/btnPesquisarQuadrinhos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblMarvelApi" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="visualizarImagem"
-            android:text="@string/visualizar_imagem" />
+    <Button
+        android:id="@+id/btnPesquisarQuadrinhos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="Mangas"
+        android:text="@string/btnPesquisarQuadrinhos"
+        app:layout_constraintBottom_toTopOf="@+id/btnPesquisarLocalizacao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPesquisarHerois" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="visualizarGaleria"
-            android:text="@string/visualizar_galeria" />
+    <TextView
+        android:id="@+id/lblBemVindo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lblBemVindo"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/lblMarvelApi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:contentDescription="@string/imgcapturada"
-            tools:srcCompat="@tools:sample/avatars" />
-
-    </LinearLayout>
+    <Button
+        android:id="@+id/btnPesquisarLocalizacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="Localizacao"
+        android:text="@string/btnPesquisarLocalizacao"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPesquisarQuadrinhos" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

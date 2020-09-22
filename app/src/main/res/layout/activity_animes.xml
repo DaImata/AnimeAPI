@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#333333"
+    tools:context=".Animes">
+
+    <TextView
+        android:id="@+id/lblPesquisarHerois"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="114dp"
+        android:text="@string/lblPesquisarHerois"
+        android:textColor="#FFFFFF"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblDigitePesquisarHerois"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/lblDigitePesquisarHerois"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblPesquisarHerois" />
+
+    <EditText
+        android:id="@+id/txtNomeHeroi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="58dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/txtNomeHeroi"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#808080"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblDigitePesquisarHerois" />
+
+    <Button
+        android:id="@+id/btnPesquisarH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="pesquisarHerois"
+        android:text="@string/btnPesquisar"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnPesquisarH2"
+        app:layout_constraintEnd_toStartOf="@+id/btnPesquisarH2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnPesquisarH2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="148dp"
+        android:onClick="MaisInformacoes"
+        android:text="@string/btnVoltar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnPesquisarH" />
+
+    <TextView
+        android:id="@+id/txtInformacaoHeroi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="295dp"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtInformacaoHeroi3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="196dp"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnSalvarInfoAnime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/SalvarInfo"
+        android:onClick="SalvarInfoAnime"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnCarregarInfoAnime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPesquisarH" />
+
+    <Button
+        android:id="@+id/btnCarregarInfoAnime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/CarrgarInfo"
+        android:onClick="CarregarInfoAnime"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnPesquisarH2"
+        app:layout_constraintTop_toBottomOf="@+id/btnPesquisarH2"
+        app:layout_constraintVertical_bias="0.505" />
+</androidx.constraintlayout.widget.ConstraintLayout>
