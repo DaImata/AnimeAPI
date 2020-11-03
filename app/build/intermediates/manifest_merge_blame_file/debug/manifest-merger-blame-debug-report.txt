@@ -23,18 +23,18 @@
 14-->C:\Users\ademi\Desktop\Basilides\TM\MarvelAPI-master\app\src\main\AndroidManifest.xml:8:5-85
 14-->C:\Users\ademi\Desktop\Basilides\TM\MarvelAPI-master\app\src\main\AndroidManifest.xml:8:22-82
 15    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-15-->C:\Users\ademi\Desktop\Basilides\TM\MarvelAPI-master\app\src\main\AndroidManifest.xml:9:5-79
+15-->C:\Users\ademi\Desktop\Basilides\TM\MarvelAPI-master\app\src\main\AndroidManifest.xml:9:5-80
 15-->C:\Users\ademi\Desktop\Basilides\TM\MarvelAPI-master\app\src\main\AndroidManifest.xml:9:22-77
 16    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-16-->C:\Users\ademi\Desktop\Basilides\TM\MarvelAPI-master\app\src\main\AndroidManifest.xml:10:5-80
+16-->C:\Users\ademi\Desktop\Basilides\TM\MarvelAPI-master\app\src\main\AndroidManifest.xml:10:5-81
 16-->C:\Users\ademi\Desktop\Basilides\TM\MarvelAPI-master\app\src\main\AndroidManifest.xml:10:22-78
 17
 18    <application
-18-->C:\Users\ademi\Desktop\Basilides\TM\MarvelAPI-master\app\src\main\AndroidManifest.xml:12:5-29:19
+18-->C:\Users\ademi\Desktop\Basilides\TM\MarvelAPI-master\app\src\main\AndroidManifest.xml:12:5-35:19
 19        android:allowBackup="true"
 19-->C:\Users\ademi\Desktop\Basilides\TM\MarvelAPI-master\app\src\main\AndroidManifest.xml:13:9-35
 20        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-20-->[androidx.core:core:1.1.0] C:\Users\ademi\.gradle\caches\transforms-2\files-2.1\76f2b6439d16df60df3177021482ee5a\core-1.1.0\AndroidManifest.xml:24:18-86
+20-->[androidx.core:core:1.1.0] C:\Users\ademi\.gradle\caches\transforms-2\files-2.1\80f58724caaf330e74c3000cc6797977\core-1.1.0\AndroidManifest.xml:24:18-86
 21        android:debuggable="true"
 22        android:extractNativeLibs="false"
 23        android:icon="@mipmap/ic_launcher"
@@ -48,44 +48,56 @@
 27        android:testOnly="true"
 28        android:theme="@style/AppTheme" >
 28-->C:\Users\ademi\Desktop\Basilides\TM\MarvelAPI-master\app\src\main\AndroidManifest.xml:18:9-40
-29        <activity android:name="com.example.marvelapi.Localizacao" />
-29-->C:\Users\ademi\Desktop\Basilides\TM\MarvelAPI-master\app\src\main\AndroidManifest.xml:19:9-58
-29-->C:\Users\ademi\Desktop\Basilides\TM\MarvelAPI-master\app\src\main\AndroidManifest.xml:19:19-46
-30        <activity android:name="com.example.marvelapi.Mangas" />
-30-->C:\Users\ademi\Desktop\Basilides\TM\MarvelAPI-master\app\src\main\AndroidManifest.xml:20:9-44
-30-->C:\Users\ademi\Desktop\Basilides\TM\MarvelAPI-master\app\src\main\AndroidManifest.xml:20:19-41
-31        <activity android:name="com.example.marvelapi.Animes" />
-31-->C:\Users\ademi\Desktop\Basilides\TM\MarvelAPI-master\app\src\main\AndroidManifest.xml:21:9-44
-31-->C:\Users\ademi\Desktop\Basilides\TM\MarvelAPI-master\app\src\main\AndroidManifest.xml:21:19-41
-32        <activity android:name="com.example.marvelapi.MainActivity" >
-32-->C:\Users\ademi\Desktop\Basilides\TM\MarvelAPI-master\app\src\main\AndroidManifest.xml:22:9-28:20
-32-->C:\Users\ademi\Desktop\Basilides\TM\MarvelAPI-master\app\src\main\AndroidManifest.xml:22:19-47
-33            <intent-filter>
-33-->C:\Users\ademi\Desktop\Basilides\TM\MarvelAPI-master\app\src\main\AndroidManifest.xml:23:13-27:29
-34                <action android:name="android.intent.action.MAIN" />
-34-->C:\Users\ademi\Desktop\Basilides\TM\MarvelAPI-master\app\src\main\AndroidManifest.xml:24:17-69
-34-->C:\Users\ademi\Desktop\Basilides\TM\MarvelAPI-master\app\src\main\AndroidManifest.xml:24:25-66
-35
-36                <category android:name="android.intent.category.LAUNCHER" />
-36-->C:\Users\ademi\Desktop\Basilides\TM\MarvelAPI-master\app\src\main\AndroidManifest.xml:26:17-77
-36-->C:\Users\ademi\Desktop\Basilides\TM\MarvelAPI-master\app\src\main\AndroidManifest.xml:26:27-74
-37            </intent-filter>
-38        </activity>
-39        <activity
-39-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\ademi\.gradle\caches\transforms-2\files-2.1\a1794986c7a3c4986f9feb2359005476\jetified-play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
-40            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-40-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\ademi\.gradle\caches\transforms-2\files-2.1\a1794986c7a3c4986f9feb2359005476\jetified-play-services-base-17.0.0\AndroidManifest.xml:24:13-79
-41            android:exported="false"
-41-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\ademi\.gradle\caches\transforms-2\files-2.1\a1794986c7a3c4986f9feb2359005476\jetified-play-services-base-17.0.0\AndroidManifest.xml:25:13-37
-42            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-42-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\ademi\.gradle\caches\transforms-2\files-2.1\a1794986c7a3c4986f9feb2359005476\jetified-play-services-base-17.0.0\AndroidManifest.xml:26:13-72
-43
-44        <meta-data
-44-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\ademi\.gradle\caches\transforms-2\files-2.1\294cc5ecc9001f3e94c034cd71f64fdf\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
-45            android:name="com.google.android.gms.version"
-45-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\ademi\.gradle\caches\transforms-2\files-2.1\294cc5ecc9001f3e94c034cd71f64fdf\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
-46            android:value="@integer/google_play_services_version" />
-46-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\ademi\.gradle\caches\transforms-2\files-2.1\294cc5ecc9001f3e94c034cd71f64fdf\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
-47    </application>
-48
-49</manifest>
+29        <activity
+29-->C:\Users\ademi\Desktop\Basilides\TM\MarvelAPI-master\app\src\main\AndroidManifest.xml:19:9-20:62
+30            android:name="com.example.marvelapi.AnimesMangaBackup"
+30-->C:\Users\ademi\Desktop\Basilides\TM\MarvelAPI-master\app\src\main\AndroidManifest.xml:19:19-52
+31            android:screenOrientation="portrait" />
+31-->C:\Users\ademi\Desktop\Basilides\TM\MarvelAPI-master\app\src\main\AndroidManifest.xml:20:13-49
+32        <activity android:name="com.example.marvelapi.Localizacao" />
+32-->C:\Users\ademi\Desktop\Basilides\TM\MarvelAPI-master\app\src\main\AndroidManifest.xml:21:9-49
+32-->C:\Users\ademi\Desktop\Basilides\TM\MarvelAPI-master\app\src\main\AndroidManifest.xml:21:19-46
+33        <activity
+33-->C:\Users\ademi\Desktop\Basilides\TM\MarvelAPI-master\app\src\main\AndroidManifest.xml:22:9-24:52
+34            android:name="com.example.marvelapi.Mangas"
+34-->C:\Users\ademi\Desktop\Basilides\TM\MarvelAPI-master\app\src\main\AndroidManifest.xml:23:13-35
+35            android:screenOrientation="portrait" />
+35-->C:\Users\ademi\Desktop\Basilides\TM\MarvelAPI-master\app\src\main\AndroidManifest.xml:24:13-49
+36        <activity
+36-->C:\Users\ademi\Desktop\Basilides\TM\MarvelAPI-master\app\src\main\AndroidManifest.xml:25:9-27:52
+37            android:name="com.example.marvelapi.Animes"
+37-->C:\Users\ademi\Desktop\Basilides\TM\MarvelAPI-master\app\src\main\AndroidManifest.xml:26:13-35
+38            android:screenOrientation="portrait" />
+38-->C:\Users\ademi\Desktop\Basilides\TM\MarvelAPI-master\app\src\main\AndroidManifest.xml:27:13-49
+39        <activity android:name="com.example.marvelapi.MainActivity" >
+39-->C:\Users\ademi\Desktop\Basilides\TM\MarvelAPI-master\app\src\main\AndroidManifest.xml:28:9-34:20
+39-->C:\Users\ademi\Desktop\Basilides\TM\MarvelAPI-master\app\src\main\AndroidManifest.xml:28:19-47
+40            <intent-filter>
+40-->C:\Users\ademi\Desktop\Basilides\TM\MarvelAPI-master\app\src\main\AndroidManifest.xml:29:13-33:29
+41                <action android:name="android.intent.action.MAIN" />
+41-->C:\Users\ademi\Desktop\Basilides\TM\MarvelAPI-master\app\src\main\AndroidManifest.xml:30:17-69
+41-->C:\Users\ademi\Desktop\Basilides\TM\MarvelAPI-master\app\src\main\AndroidManifest.xml:30:25-66
+42
+43                <category android:name="android.intent.category.LAUNCHER" />
+43-->C:\Users\ademi\Desktop\Basilides\TM\MarvelAPI-master\app\src\main\AndroidManifest.xml:32:17-77
+43-->C:\Users\ademi\Desktop\Basilides\TM\MarvelAPI-master\app\src\main\AndroidManifest.xml:32:27-74
+44            </intent-filter>
+45        </activity>
+46        <activity
+46-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\ademi\.gradle\caches\transforms-2\files-2.1\b64aa4f17e23c4f3b9c5f8ff583bfd0d\jetified-play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+47            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+47-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\ademi\.gradle\caches\transforms-2\files-2.1\b64aa4f17e23c4f3b9c5f8ff583bfd0d\jetified-play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+48            android:exported="false"
+48-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\ademi\.gradle\caches\transforms-2\files-2.1\b64aa4f17e23c4f3b9c5f8ff583bfd0d\jetified-play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+49            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+49-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\ademi\.gradle\caches\transforms-2\files-2.1\b64aa4f17e23c4f3b9c5f8ff583bfd0d\jetified-play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+50
+51        <meta-data
+51-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\ademi\.gradle\caches\transforms-2\files-2.1\09a73e8828332f639ca43c2c3d1e6559\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+52            android:name="com.google.android.gms.version"
+52-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\ademi\.gradle\caches\transforms-2\files-2.1\09a73e8828332f639ca43c2c3d1e6559\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+53            android:value="@integer/google_play_services_version" />
+53-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\ademi\.gradle\caches\transforms-2\files-2.1\09a73e8828332f639ca43c2c3d1e6559\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+54    </application>
+55
+56</manifest>

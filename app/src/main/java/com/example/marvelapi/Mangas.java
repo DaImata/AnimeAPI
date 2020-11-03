@@ -48,6 +48,7 @@ public class Mangas extends AppCompatActivity implements LoaderManager.LoaderCal
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mangas);
+        getSupportActionBar().hide();
 
         ArmazenamentoExternoWrite();
         ArmazenamentoExternoRead();
@@ -189,7 +190,7 @@ public class Mangas extends AppCompatActivity implements LoaderManager.LoaderCal
             btnMaisInformacoes.setEnabled(true);
             btnCarregarInfoManga.setEnabled(true);
             btnSalvarInfoManga.setEnabled(false);
-            Toast.makeText(this, "Salvo no armazenamento interno em " + getExternalStorageDirectory() + "/" + FILE_NAME, Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Salvo no armazenamento externo em " + getExternalStorageDirectory() + "/" + FILE_NAME, Toast.LENGTH_LONG).show();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {

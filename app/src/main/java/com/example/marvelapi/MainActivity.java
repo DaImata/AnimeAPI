@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        getSupportActionBar().hide();
 
         setTitle("API de Animes");
     }
@@ -29,5 +30,10 @@ public class MainActivity extends AppCompatActivity {
     public void Localizacao (View view){
         Intent intentLocalizacao = new Intent (MainActivity.this, Localizacao.class);
         startActivity(intentLocalizacao);
+    }
+
+    public void Backup (View view){
+        Intent intentBackup = new Intent (MainActivity.this, AnimesMangaBackup.class);
+        startActivity(intentBackup);
     }
 }

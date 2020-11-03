@@ -26,9 +26,16 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.marvelapi.AnimesMangaBackup"
+            android:screenOrientation="portrait" />
         <activity android:name="com.example.marvelapi.Localizacao" />
-        <activity android:name="com.example.marvelapi.Mangas" />
-        <activity android:name="com.example.marvelapi.Animes" />
+        <activity
+            android:name="com.example.marvelapi.Mangas"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.marvelapi.Animes"
+            android:screenOrientation="portrait" />
         <activity android:name="com.example.marvelapi.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

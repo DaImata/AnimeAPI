@@ -46,6 +46,7 @@ public class Localizacao extends AppCompatActivity implements EnderecoAsync.OnTa
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_localizacao);
+        getSupportActionBar().hide();
 
         lblEndereco = findViewById(R.id.lblEndereco);
         btnPesquisarLocalizacao = findViewById(R.id.btnPesquisarLocalizacao);

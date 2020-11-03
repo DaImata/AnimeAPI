@@ -1,119 +1,141 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#333333"
-    tools:context=".Mangas">
+    android:fillViewport="true">
 
-    <TextView
-        android:id="@+id/lblDigitePesquisarQuadrinhos"
-        android:layout_width="wrap_content"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="58dp"
-        android:text="@string/lblDigitePesquisarQuadrinhos"
-        android:textColor="#FFFFFF"
-        android:textSize="15sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lblPesquisarQuadrinhos" />
+        android:background="#333333"
+        tools:context=".Mangas">
 
-    <EditText
-        android:id="@+id/txtQuadrinhos"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="47dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:hint="@string/txtQuadrinhos"
-        android:inputType="textPersonName"
-        android:textColor="#FFFFFF"
-        android:textColorHint="#808080"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lblDigitePesquisarQuadrinhos" />
+        <TextView
+            android:id="@+id/lblPesquisarQuadrinhos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:text="@string/lblPesquisarQuadrinhos"
+            android:textColor="#FFFFFF"
+            android:textSize="35sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/lblPesquisarQuadrinhos"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="114dp"
-        android:text="@string/lblPesquisarQuadrinhos"
-        android:textColor="#FFFFFF"
-        android:textSize="35sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/lblDigitePesquisarQuadrinhos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="32dp"
+            android:text="@string/lblDigitePesquisarQuadrinhos"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblPesquisarQuadrinhos" />
 
-    <TextView
-        android:id="@+id/txtInformacao1Q"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="33dp"
-        android:layout_marginTop="61dp"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtQuadrinhos" />
+        <EditText
+            android:id="@+id/txtQuadrinhos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="58dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/txtQuadrinhos"
+            android:inputType="textPersonName"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#808080"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblDigitePesquisarQuadrinhos" />
 
-    <TextView
-        android:id="@+id/txtInformacao3Q"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="76dp"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtInformacao1Q" />
+        <TextView
+            android:id="@+id/txtInformacao1Q"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtQuadrinhos" />
 
-    <Button
-        android:id="@+id/btnSalvarInfoManga"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/SalvarInfo"
-        android:onClick="SalvarInfoManga"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btnCarregarInfoManga"
-        app:layout_constraintHorizontal_bias="0.363"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnPesquisarQ"
-        app:layout_constraintVertical_bias="0.283" />
+        <TextView
+            android:id="@+id/txtInformacao3Q"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtInformacao1Q" />
 
-    <Button
-        android:id="@+id/btnPesquisarQ"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="pesquisarMangas"
-        android:text="@string/btnPesquisar"
-        app:layout_constraintBaseline_toBaselineOf="@+id/btnPesquisarQ2"
-        app:layout_constraintEnd_toStartOf="@+id/btnPesquisarQ2"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent" />
+        <Button
+            android:id="@+id/btnSalvarInfoManga"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="41dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="41dp"
+            android:onClick="SalvarInfoManga"
+            android:text="@string/SalvarInfo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnBackupManga" />
 
-    <Button
-        android:id="@+id/btnPesquisarQ2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="136dp"
-        android:onClick="MaisInformacoes"
-        android:text="@string/btnVoltar"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btnPesquisarQ" />
+        <Button
+            android:id="@+id/btnPesquisarQ"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="41dp"
+            android:layout_marginTop="40dp"
+            android:onClick="pesquisarMangas"
+            android:text="@string/btnPesquisar"
+            app:layout_constraintEnd_toStartOf="@+id/btnPesquisarQ2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtInformacao3Q" />
 
-    <Button
-        android:id="@+id/btnCarregarInfoManga"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:text="@string/CarrgarInfo"
-        android:onClick="CarregarInfoManga"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/btnPesquisarQ2"
-        app:layout_constraintTop_toBottomOf="@+id/btnPesquisarQ2"
-        app:layout_constraintVertical_bias="0.283" />
+        <Button
+            android:id="@+id/btnPesquisarQ2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="41dp"
+            android:onClick="MaisInformacoes"
+            android:text="@string/btnVoltar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btnPesquisarQ"
+            app:layout_constraintTop_toBottomOf="@+id/txtInformacao3Q" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:id="@+id/btnCarregarInfoManga"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="41dp"
+            android:onClick="CarregarInfoManga"
+            android:text="@string/CarrgarInfo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnPesquisarQ2" />
+
+        <Button
+            android:id="@+id/btnBackupManga"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="41dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/FazerBackup"
+            app:layout_constraintEnd_toStartOf="@+id/btnCarregarInfoManga"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnPesquisarQ" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

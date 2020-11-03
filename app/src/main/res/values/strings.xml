@@ -6,12 +6,14 @@
     <string name="btnPesquisarQuadrinhos">Pesquisar Mangás</string>
     <string name="btnSaberLocalizacao">Saber Minha Localização</string>
     <string name="btnPesquisarLocalizacao">Pesquisar Minha Localização</string>
+    <string name="VerBackup">Ver Backups</string>
 
     <string name="lblPesquisarHerois">Pesquisar Animes</string>
     <string name="lblDigitePesquisarHerois">Digite o nome do anime para ver suas informações</string>
     <string name="txtNomeHeroi">Ex: Naruto</string>
-    <string name="SalvarInfo">Limpar Tela\ne Salvar Informações</string>
-    <string name="CarrgarInfo">Carregar\nInformações</string>
+    <string name="SalvarInfo">Limpar Tela e Salvar Informações</string>
+    <string name="CarrgarInfo">Carregar Informações</string>
+    <string name="FazerBackup">Fazer Backup</string>
 
     <string name="carregando">Carregando...</string>
     <string name="sem_termodebusca">Informe um termo de busca</string>
@@ -31,6 +33,8 @@
     <string name="ServicoIndisponivel">Serviço Indisponível</string>
     <string name="CoordenadaIndisponivel">Coordenadas Indisponíveis</string>
     <string name="btnParar">Encerrar Busca</string>
+
+
 
     <string name="btnPesquisar">Pesquisar</string>
     <string name="btnVoltar">Mais informações</string>

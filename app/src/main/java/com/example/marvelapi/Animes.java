@@ -8,10 +8,13 @@ import androidx.loader.content.Loader;
 
 import android.content.Context;
 import android.content.Intent;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
@@ -40,6 +43,7 @@ public class Animes extends AppCompatActivity implements LoaderManager.LoaderCal
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_animes);
+        getSupportActionBar().hide();
 
         setTitle("Pesquisar Animes");
         txtHeroi = findViewById(R.id.txtNomeHeroi);
@@ -54,6 +58,42 @@ public class Animes extends AppCompatActivity implements LoaderManager.LoaderCal
 
         if (getSupportLoaderManager().getLoader(0) != null) {
             getSupportLoaderManager().initLoader(0, null, this);
+        }
+
+        try {
+            //Criar Banco de Dados
+            SQLiteDatabase bancoDados = openOrCreateDatabase("Obras", MODE_PRIVATE, null);
+
+            //Criar Tabela
+            bancoDados.execSQL("CREATE TABLE IF NOT EXISTS tbAnimes(" +
+                    "texto VARCHAR)");
+
+            //Inserir Dados na tabela
+            //bancoDados.execSQL("INSERT INTO tbPessoas(nome,idade) VALUES('Mariana',18) ");
+            //bancoDados.execSQL("INSERT INTO tbPessoas(nome,idade) VALUES('Juilia',16) ");
+            bancoDados.execSQL("INSERT INTO tbAnimes(texto) VALUES("+ txtInformacaoHeroi.getText() +")");
+
+            //bancoDados.execSQL("UPDATE tbPessoas SET idade =21,nome='Julia Silva' WHERE id=2");
+            //bancoDados.execSQL("DELETE from tbPessoas WHERE id=4");
+
+            //Recuperar pessoas
+            //String consulta = "SELECT * FROM tbPessoas"+ " WHERE nome='Mariana' ";
+            Cursor cursor = bancoDados.rawQuery("SELECT * FROM tbAnimes", null);
+
+            //Indices de tabela
+            int indiceTexto = cursor.getColumnIndex("texto");
+
+            cursor.moveToFirst();
+            while (cursor != null) {
+                String texto = cursor.getString(indiceTexto);
+
+                Log.i("RESULTADO -  cod",  " Obra: " + texto);
+                cursor.moveToNext();
+            }
+
+
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 
@@ -78,8 +118,7 @@ public class Animes extends AppCompatActivity implements LoaderManager.LoaderCal
             queryBundle.putString("queryString", queryString);
             getSupportLoaderManager().restartLoader(0, queryBundle, this);
             txtInformacaoHeroi.setText(R.string.carregando);
-        }
-        else {
+        } else {
             if (queryString.length() == 0) {
                 txtInformacaoHeroi.setText(R.string.sem_termodebusca);
             } else {
@@ -87,6 +126,7 @@ public class Animes extends AppCompatActivity implements LoaderManager.LoaderCal
             }
         }
     }
+
     @NonNull
     @Override
     public Loader<String> onCreateLoader(int id, @Nullable Bundle args) {
@@ -96,6 +136,7 @@ public class Animes extends AppCompatActivity implements LoaderManager.LoaderCal
         }
         return new CarregaAnimes(this, queryString);
     }
+
     @Override
     public void onLoadFinished(@NonNull Loader<String> loader, String data) {
         try {
@@ -104,12 +145,12 @@ public class Animes extends AppCompatActivity implements LoaderManager.LoaderCal
             // Obtem o JSONArray dos itens de livros
             JSONArray resultados = jsonObject.getJSONArray("results");
             // Procura pro resultados nos itens do array
-                // Obtem a informação
-                JSONObject obj= resultados.getJSONObject(0);
-                Score = obj.getString("score");
-                Episodes = obj.getString("episodes");
-                Url = obj.getString("url");
-                Name = obj.getString("title");
+            // Obtem a informação
+            JSONObject obj = resultados.getJSONObject(0);
+            Score = obj.getString("score");
+            Episodes = obj.getString("episodes");
+            Url = obj.getString("url");
+            Name = obj.getString("title");
 
             //mostra o resultado qdo possivel.
             if (Score != null || Episodes != null) {
@@ -129,11 +170,13 @@ public class Animes extends AppCompatActivity implements LoaderManager.LoaderCal
             e.printStackTrace();
         }
     }
+
     @Override
     public void onLoaderReset(@NonNull Loader<String> loader) {
         // obrigatório implementar, nenhuma ação executada
     }
-    public void MaisInformacoes (View view){
+
+    public void MaisInformacoes(View view) {
         Intent intent = new Intent();
         intent.setAction(Intent.ACTION_VIEW);
         intent.addCategory(Intent.CATEGORY_BROWSABLE);
@@ -141,7 +184,7 @@ public class Animes extends AppCompatActivity implements LoaderManager.LoaderCal
         startActivity(intent);
     }
 
-    public void SalvarInfoAnime(View view){
+    public void SalvarInfoAnime(View view) {
         String texto = txtInformacaoHeroi.getText().toString();
         FileOutputStream fileOutputStream = null;
 
@@ -160,8 +203,8 @@ public class Animes extends AppCompatActivity implements LoaderManager.LoaderCal
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
-        } finally{
-            if (fileOutputStream != null){
+        } finally {
+            if (fileOutputStream != null) {
                 try {
                     fileOutputStream.close();
                 } catch (IOException e) {
@@ -171,7 +214,7 @@ public class Animes extends AppCompatActivity implements LoaderManager.LoaderCal
         }
     }
 
-    public void CarregarInfoAnime(View view){
+    public void CarregarInfoAnime(View view) {
         FileInputStream fileInputStream = null;
         try {
             fileInputStream = openFileInput(FILE_NAME);
@@ -180,7 +223,7 @@ public class Animes extends AppCompatActivity implements LoaderManager.LoaderCal
             StringBuilder stringBuilder = new StringBuilder();
             String texto;
 
-            while((texto = bufferedReader.readLine()) !=null){
+            while ((texto = bufferedReader.readLine()) != null) {
                 stringBuilder.append(texto).append("\n");
             }
             txtInformacaoHeroi.setText(stringBuilder.toString());
@@ -189,7 +232,7 @@ public class Animes extends AppCompatActivity implements LoaderManager.LoaderCal
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
-            if (fileInputStream != null){
+            if (fileInputStream != null) {
                 try {
                     fileInputStream.close();
                 } catch (IOException e) {
