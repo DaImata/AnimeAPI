@@ -34,6 +34,10 @@
     <string name="CoordenadaIndisponivel">Coordenadas Indisponíveis</string>
     <string name="btnParar">Encerrar Busca</string>
 
+    <string name="Excluir">Excluir</string>
+
+    <string name="Item">Item</string>
+
 
 
     <string name="btnPesquisar">Pesquisar</string>

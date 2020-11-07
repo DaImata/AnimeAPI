@@ -804,6 +804,7 @@ id btnBackupAnimeManga
 id btnBackupManga
 id btnCarregarInfoAnime
 id btnCarregarInfoManga
+id btnExcluirBackup
 id btnPesquisarH
 id btnPesquisarH2
 id btnPesquisarHerois
@@ -813,7 +814,6 @@ id btnPesquisarQ2
 id btnPesquisarQuadrinhos
 id btnSalvarInfoAnime
 id btnSalvarInfoManga
-id button
 id buttonPanel
 id center_vertical
 id chains
@@ -883,6 +883,7 @@ id percent
 id progress_circular
 id progress_horizontal
 id radio
+id recycler
 id right
 id right_icon
 id right_side
@@ -939,7 +940,7 @@ id txtInformacao1Q
 id txtInformacao3Q
 id txtInformacaoHeroi
 id txtInformacaoHeroi3
-id txtItensSalvos
+id txtItem
 id txtNomeHeroi
 id txtQuadrinhos
 id txtVerBackups
@@ -998,6 +999,7 @@ layout activity_localizacao
 layout activity_main
 layout activity_mangas
 layout custom_dialog
+layout lista_backup_adapter
 layout notification_action
 layout notification_action_tombstone
 layout notification_template_custom_big
@@ -1013,7 +1015,9 @@ mipmap ic_launcher_round
 string CarrgarInfo
 string CoordenadaIndisponivel
 string EnderecoIndisponivel
+string Excluir
 string FazerBackup
+string Item
 string LocalIndisponivel
 string PermissaoNegada
 string SalvarInfo
