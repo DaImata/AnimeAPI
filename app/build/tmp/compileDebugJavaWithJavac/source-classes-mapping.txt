@@ -1,0 +1,42 @@
+com/example/marvelapi/Mangas.java
+ com.example.marvelapi.Mangas
+com/example/marvelapi/BackupAdapter.java
+ com.example.marvelapi.BackupAdapter
+ com.example.marvelapi.BackupAdapter$ViewHolder
+com/example/marvelapi/dbHelper.java
+ com.example.marvelapi.dbHelper
+com/example/marvelapi/RecyclerListener.java
+ com.example.marvelapi.RecyclerListener
+ com.example.marvelapi.RecyclerListener$1
+ com.example.marvelapi.RecyclerListener$OnItemClickListener
+com/example/marvelapi/DAO.java
+ com.example.marvelapi.DAO
+com/example/marvelapi/Network2.java
+ com.example.marvelapi.Network2
+com/example/marvelapi/AnimesMangaBackup.java
+ com.example.marvelapi.AnimesMangaBackup
+ com.example.marvelapi.AnimesMangaBackup$1
+ com.example.marvelapi.AnimesMangaBackup$1$1
+com/example/marvelapi/Localizacao.java
+ com.example.marvelapi.Localizacao
+ com.example.marvelapi.Localizacao$1
+ com.example.marvelapi.Localizacao$2
+com/example/marvelapi/EnderecoAsync.java
+ com.example.marvelapi.EnderecoAsync
+ com.example.marvelapi.EnderecoAsync$OnTaskCompleted
+com/example/marvelapi/BuildConfig.java
+ com.example.marvelapi.BuildConfig
+com/example/marvelapi/BackupsFeitos.java
+ com.example.marvelapi.BackupsFeitos
+com/example/marvelapi/CarregaMangas.java
+ com.example.marvelapi.CarregaMangas
+com/example/marvelapi/I_DAO.java
+ com.example.marvelapi.I_DAO
+com/example/marvelapi/Network.java
+ com.example.marvelapi.Network
+com/example/marvelapi/MainActivity.java
+ com.example.marvelapi.MainActivity
+com/example/marvelapi/CarregaAnimes.java
+ com.example.marvelapi.CarregaAnimes
+com/example/marvelapi/Animes.java
+ com.example.marvelapi.Animes
