@@ -34,7 +34,7 @@
 19        android:allowBackup="true"
 19-->C:\Users\ademi\Desktop\Basilides\TM\MarvelAPI-master\app\src\main\AndroidManifest.xml:13:9-35
 20        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-20-->[androidx.core:core:1.1.0] C:\Users\ademi\.gradle\caches\transforms-2\files-2.1\80f58724caaf330e74c3000cc6797977\core-1.1.0\AndroidManifest.xml:24:18-86
+20-->[androidx.core:core:1.1.0] C:\Users\ademi\.gradle\caches\transforms-2\files-2.1\73530a2d0c1df4b3085807c82555ce12\core-1.1.0\AndroidManifest.xml:24:18-86
 21        android:debuggable="true"
 22        android:extractNativeLibs="false"
 23        android:icon="@mipmap/ic_launcher"
@@ -84,20 +84,20 @@
 44            </intent-filter>
 45        </activity>
 46        <activity
-46-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\ademi\.gradle\caches\transforms-2\files-2.1\b64aa4f17e23c4f3b9c5f8ff583bfd0d\jetified-play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+46-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\ademi\.gradle\caches\transforms-2\files-2.1\4858ba8f6e273fdf2dcb9d88023c9534\jetified-play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
 47            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-47-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\ademi\.gradle\caches\transforms-2\files-2.1\b64aa4f17e23c4f3b9c5f8ff583bfd0d\jetified-play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+47-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\ademi\.gradle\caches\transforms-2\files-2.1\4858ba8f6e273fdf2dcb9d88023c9534\jetified-play-services-base-17.0.0\AndroidManifest.xml:24:13-79
 48            android:exported="false"
-48-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\ademi\.gradle\caches\transforms-2\files-2.1\b64aa4f17e23c4f3b9c5f8ff583bfd0d\jetified-play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+48-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\ademi\.gradle\caches\transforms-2\files-2.1\4858ba8f6e273fdf2dcb9d88023c9534\jetified-play-services-base-17.0.0\AndroidManifest.xml:25:13-37
 49            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-49-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\ademi\.gradle\caches\transforms-2\files-2.1\b64aa4f17e23c4f3b9c5f8ff583bfd0d\jetified-play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+49-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\ademi\.gradle\caches\transforms-2\files-2.1\4858ba8f6e273fdf2dcb9d88023c9534\jetified-play-services-base-17.0.0\AndroidManifest.xml:26:13-72
 50
 51        <meta-data
-51-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\ademi\.gradle\caches\transforms-2\files-2.1\09a73e8828332f639ca43c2c3d1e6559\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+51-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\ademi\.gradle\caches\transforms-2\files-2.1\f46279d3478497538e817a8da381f082\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
 52            android:name="com.google.android.gms.version"
-52-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\ademi\.gradle\caches\transforms-2\files-2.1\09a73e8828332f639ca43c2c3d1e6559\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+52-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\ademi\.gradle\caches\transforms-2\files-2.1\f46279d3478497538e817a8da381f082\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
 53            android:value="@integer/google_play_services_version" />
-53-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\ademi\.gradle\caches\transforms-2\files-2.1\09a73e8828332f639ca43c2c3d1e6559\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+53-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\ademi\.gradle\caches\transforms-2\files-2.1\f46279d3478497538e817a8da381f082\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
 54    </application>
 55
 56</manifest>

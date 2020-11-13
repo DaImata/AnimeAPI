@@ -36,7 +36,7 @@ public class Animes extends AppCompatActivity implements LoaderManager.LoaderCal
     private static final String FILE_NAME = "InformacoesAnime.txt";
     private EditText txtHeroi;
     private TextView txtInformacaoHeroi, txtInformacaoHeroi3, btnSalvarInfoAnime, btnCarregarInfoAnime;
-    private Button btnMaisInformacoes;
+    private Button btnMaisInformacoes, btnBackup;
     String Score, Episodes, Url, Name;
 
     @Override
@@ -52,49 +52,25 @@ public class Animes extends AppCompatActivity implements LoaderManager.LoaderCal
         btnMaisInformacoes = findViewById(R.id.btnPesquisarH2);
         btnSalvarInfoAnime = findViewById(R.id.btnSalvarInfoAnime);
         btnCarregarInfoAnime = findViewById(R.id.btnCarregarInfoAnime);
+        btnBackup = findViewById(R.id.btnBackup);
         btnMaisInformacoes.setEnabled(false);
         btnCarregarInfoAnime.setEnabled(false);
         btnSalvarInfoAnime.setEnabled(false);
+        btnBackup.setEnabled(false);
 
         if (getSupportLoaderManager().getLoader(0) != null) {
             getSupportLoaderManager().initLoader(0, null, this);
         }
+    }
 
-        try {
-            //Criar Banco de Dados
-            SQLiteDatabase bancoDados = openOrCreateDatabase("Obras", MODE_PRIVATE, null);
+    public void backupAnime(View view){
+        DAO dao = new DAO (getApplicationContext());
+        BackupsFeitos backupsFeitos = new BackupsFeitos();
+        backupsFeitos.setDadosBackup(txtInformacaoHeroi.getText().toString());
+        dao.salvar(backupsFeitos);
+        finish();
 
-            //Criar Tabela
-            bancoDados.execSQL("CREATE TABLE IF NOT EXISTS tbAnimes(" +
-                    "texto VARCHAR)");
-
-            //Inserir Dados na tabela
-            //bancoDados.execSQL("INSERT INTO tbPessoas(nome,idade) VALUES('Mariana',18) ");
-            //bancoDados.execSQL("INSERT INTO tbPessoas(nome,idade) VALUES('Juilia',16) ");
-            bancoDados.execSQL("INSERT INTO tbAnimes(texto) VALUES("+ txtInformacaoHeroi.getText() +")");
-
-            //bancoDados.execSQL("UPDATE tbPessoas SET idade =21,nome='Julia Silva' WHERE id=2");
-            //bancoDados.execSQL("DELETE from tbPessoas WHERE id=4");
-
-            //Recuperar pessoas
-            //String consulta = "SELECT * FROM tbPessoas"+ " WHERE nome='Mariana' ";
-            Cursor cursor = bancoDados.rawQuery("SELECT * FROM tbAnimes", null);
-
-            //Indices de tabela
-            int indiceTexto = cursor.getColumnIndex("texto");
-
-            cursor.moveToFirst();
-            while (cursor != null) {
-                String texto = cursor.getString(indiceTexto);
-
-                Log.i("RESULTADO -  cod",  " Obra: " + texto);
-                cursor.moveToNext();
-            }
-
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        Toast.makeText(getApplicationContext(), "Sucesso ao fazer o backup!", Toast.LENGTH_LONG).show();
     }
 
     public void pesquisarHerois(View view) {
@@ -159,6 +135,7 @@ public class Animes extends AppCompatActivity implements LoaderManager.LoaderCal
                 btnMaisInformacoes.setEnabled(true);
                 btnCarregarInfoAnime.setEnabled(true);
                 btnSalvarInfoAnime.setEnabled(true);
+                btnBackup.setEnabled(true);
                 txtInformacaoHeroi3.setText(R.string.mais_informacoes);
             } else {
                 // If none are found, update the UI to show failed results.
@@ -198,6 +175,7 @@ public class Animes extends AppCompatActivity implements LoaderManager.LoaderCal
             btnMaisInformacoes.setEnabled(true);
             btnCarregarInfoAnime.setEnabled(true);
             btnSalvarInfoAnime.setEnabled(false);
+            btnBackup.setEnabled(false);
             Toast.makeText(this, "Salvo no armazenamento interno em " + getFilesDir() + "/" + FILE_NAME, Toast.LENGTH_LONG).show();
         } catch (FileNotFoundException e) {
             e.printStackTrace();

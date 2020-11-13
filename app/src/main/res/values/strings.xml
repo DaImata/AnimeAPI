@@ -19,7 +19,7 @@
     <string name="sem_termodebusca">Informe um termo de busca</string>
     <string name="sem_internet">Sem internet!</string>
     <string name="sem_resultados">Sem resultados</string>
-    <string name="mais_informacoes">Botão "Mais Informações" habilitado!</string>
+    <string name="mais_informacoes">Botão Mais Informações habilitado!</string>
 
     <string name="lblPesquisarQuadrinhos">Pesquisar Mangás</string>
     <string name="lblDigitePesquisarQuadrinhos">Digite o nome do mangá para ver suas informações</string>
@@ -42,4 +42,5 @@
 
     <string name="btnPesquisar">Pesquisar</string>
     <string name="btnVoltar">Mais informações</string>
+    <string name="Voltar">Voltar</string>
 </resources>

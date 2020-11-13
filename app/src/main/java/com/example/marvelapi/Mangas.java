@@ -133,7 +133,6 @@ public class Mangas extends AppCompatActivity implements LoaderManager.LoaderCal
                 btnCarregarInfoManga.setEnabled(true);
                 txtInformacao3.setText(R.string.mais_informacoes);
             } else {
-                // If none are found, update the UI to show failed results.
                 txtInformacao1.setText(R.string.sem_resultados);
             }
         } catch (Exception e) {
